@@ -48,19 +48,19 @@ export default function Price({ onCTA }) {
           {/* Track 2: Индивидуально */}
           <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-8 flex flex-col">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 py-1 text-xs text-white/70 font-semibold mb-5 self-start">
-              ДЛЯ КОМАНД
+              ПЕРСОНАЛЬНО
             </div>
             <p className="text-white/50 text-sm mb-1">Индивидуально</p>
-            <h3 className="text-2xl font-bold text-white mb-2">Под вашу команду</h3>
-            <div className="text-5xl font-bold text-white mt-4 mb-1">от 50 000 ₸</div>
+            <h3 className="text-2xl font-bold text-white mb-2">Один на один с тренером</h3>
+            <div className="text-5xl font-bold text-white mt-4 mb-1">Договорная</div>
             <p className="text-white/40 text-sm mb-8">обсуждается лично</p>
 
             <ul className="space-y-2 text-sm text-white/70 mb-8 flex-1">
               {[
-                'Программа под задачи компании',
+                'Программа под твои задачи',
                 'Удобное время и место',
-                'Размер группы согласуем',
                 'Углублённые модули по запросу',
+                'Темп и формат под тебя',
                 'Стоимость и оплату обсудим в звонке',
               ].map(i => (
                 <li key={i} className="flex items-start gap-2">
