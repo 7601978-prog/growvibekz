@@ -10,7 +10,7 @@ export const sessions = [
     location: 'Кафе, адрес после согласования',
     seatsTotal: 20,
     seatsLeft: 20,
-    price: 'Индивидуально',
+    price: '50 000 ₸',
     status: 'Есть места',
   },
   {
@@ -24,7 +24,7 @@ export const sessions = [
     location: 'Кафе, адрес после согласования',
     seatsTotal: 20,
     seatsLeft: 20,
-    price: 'Индивидуально',
+    price: '50 000 ₸',
     status: 'Есть места',
   },
   {
@@ -38,7 +38,7 @@ export const sessions = [
     location: 'Коворкинг, адрес после согласования',
     seatsTotal: 20,
     seatsLeft: 20,
-    price: 'Индивидуально',
+    price: '50 000 ₸',
     status: 'Есть места',
   },
 ];

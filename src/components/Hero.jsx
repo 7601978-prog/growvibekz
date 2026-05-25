@@ -24,7 +24,7 @@ export default function Hero({ onCTA, onSchedule }) {
 
         {/* pills */}
         <div className="flex flex-wrap justify-center gap-3 mb-12 text-sm">
-          {['3 часа практики', 'Офлайн-формат', 'Для новичков', 'Первый сайт или AI-прототип', 'Стоимость индивидуально'].map(t => (
+          {['3 часа практики', 'Офлайн-формат', 'Для новичков', 'Группа · 50 000 ₸', 'Команды · индивидуально'].map(t => (
             <span key={t} className="bg-white/10 border border-white/20 rounded-full px-4 py-1.5">
               {t}
             </span>

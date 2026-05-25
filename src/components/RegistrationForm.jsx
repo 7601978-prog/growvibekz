@@ -205,19 +205,22 @@ export default function RegistrationForm({ sessions = fallbackSessions, canRegis
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold mb-2">Оплата через Kaspi</h2>
-          <p className="text-white/50 text-sm mb-8">Стоимость считаем индивидуально. Отсканируй QR — попадёшь в Kaspi на счёт организатора. Сумму подскажем после заявки.</p>
+          <h2 className="text-2xl font-bold mb-2">Оплати через Kaspi</h2>
+          <p className="text-white/50 text-sm mb-8">Отсканируй QR или переведи по номеру — попадёшь в Kaspi на счёт организатора. Прикрепи чек ниже, место закрепится после проверки.</p>
 
-          {/* QR + контакт */}
+          {/* QR + сумма + номер */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-6">
             <div className="flex justify-center mb-5">
-              <img src="/kaspi-qr.jpg" alt="Kaspi QR — TOO GROW CONSULTING" className="w-56 h-auto rounded-xl bg-white" />
+              <img src="/kaspi-qr.jpg" alt="Kaspi QR — TOO GROW CONSULTING" className="w-52 h-auto rounded-xl bg-white" />
             </div>
+
+            <p className="text-white/40 text-xs uppercase tracking-widest mb-1">Сумма</p>
+            <p className="text-3xl font-bold text-[#D97757] mb-5">{KASPI_AMOUNT} ₸</p>
 
             <p className="text-white/40 text-xs uppercase tracking-widest mb-1">Получатель</p>
             <p className="font-semibold mb-4">ТОО «GROW CONSULTING»</p>
 
-            <p className="text-white/40 text-xs uppercase tracking-widest mb-1">Номер для связи</p>
+            <p className="text-white/40 text-xs uppercase tracking-widest mb-1">Номер Kaspi</p>
             <div className="flex items-center justify-between">
               <p className="text-lg font-mono font-bold">{KASPI_PHONE}</p>
               <button

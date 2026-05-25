@@ -1,43 +1,87 @@
 export default function Price({ onCTA }) {
   return (
     <section className="py-20 bg-[#0f0f0f] text-white">
-      <div className="max-w-3xl mx-auto px-6 text-center">
-        <p className="text-[#D97757] font-semibold text-sm uppercase tracking-widest mb-3">Стоимость</p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Стоимость участия</h2>
-        <div className="text-5xl md:text-6xl font-bold text-[#D97757] my-8">Индивидуально</div>
-        <p className="text-white/60 text-lg mb-3">
-          Стоимость по GrowVibe считаем под каждого участника или группу — зависит
-          от формата (личный практикум или в группе) и задач, которые хотите решить.
-        </p>
-        <p className="text-white/40 text-sm mb-10">
-          Оставь заявку — свяжемся, обсудим и пришлём предложение.
-        </p>
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="text-center mb-14">
+          <p className="text-[#D97757] font-semibold text-sm uppercase tracking-widest mb-3">Стоимость</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">Два формата участия</h2>
+          <p className="text-white/50 text-base max-w-2xl mx-auto">
+            Можно записаться одному в открытую группу — или взять формат под свою команду.
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-6 text-left mb-10">
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-            <p className="font-semibold mb-4 text-white">Входит в стоимость:</p>
-            {['3 часа практического обучения', 'Работа над первым проектом', 'Помощь тренера', 'Базовые промпты', 'Инструкция по дальнейшей работе'].map(i => (
-              <div key={i} className="flex items-center gap-2 text-white/70 text-sm mb-2">
-                <span className="text-[#D97757]">✓</span> {i}
-              </div>
-            ))}
+        <div className="grid md:grid-cols-2 gap-5 mb-12">
+
+          {/* Track 1: Групповая */}
+          <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-8 flex flex-col">
+            <div className="inline-flex items-center gap-2 bg-[#D97757]/20 border border-[#D97757]/40 rounded-full px-3 py-1 text-xs text-[#D97757] font-semibold mb-5 self-start">
+              ПОПУЛЯРНОЕ
+            </div>
+            <p className="text-white/50 text-sm mb-1">Групповая запись</p>
+            <h3 className="text-2xl font-bold text-white mb-2">Открытый практикум</h3>
+            <div className="text-5xl font-bold text-[#D97757] mt-4 mb-1">50 000 ₸</div>
+            <p className="text-white/40 text-sm mb-8">за участника · 3 часа практики</p>
+
+            <ul className="space-y-2 text-sm text-white/70 mb-8 flex-1">
+              {[
+                'В группе до 20 человек',
+                'Расписание с открытыми датами',
+                'Помощь тренера на месте',
+                'Базовые промпты и инструкции',
+                'Оплата через Kaspi (по чеку)',
+              ].map(i => (
+                <li key={i} className="flex items-start gap-2">
+                  <span className="text-[#D97757] mt-0.5">✓</span>
+                  <span>{i}</span>
+                </li>
+              ))}
+            </ul>
+
+            <button
+              onClick={onCTA}
+              className="w-full bg-[#D97757] hover:bg-[#c4674a] text-white font-semibold py-3.5 rounded-xl text-sm transition-colors"
+            >
+              Записаться в группу →
+            </button>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-            <p className="font-semibold mb-4 text-white/60">Не входит:</p>
-            {['Еда и напитки в кафе', 'Подписка Claude Pro', 'Другие платные AI-инструменты', 'Личный ноутбук'].map(i => (
-              <div key={i} className="flex items-center gap-2 text-white/40 text-sm mb-2">
-                <span>—</span> {i}
-              </div>
-            ))}
+
+          {/* Track 2: Индивидуально */}
+          <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-8 flex flex-col">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 py-1 text-xs text-white/70 font-semibold mb-5 self-start">
+              ДЛЯ КОМАНД
+            </div>
+            <p className="text-white/50 text-sm mb-1">Индивидуально</p>
+            <h3 className="text-2xl font-bold text-white mb-2">Под вашу команду</h3>
+            <div className="text-5xl font-bold text-white mt-4 mb-1">от 50 000 ₸</div>
+            <p className="text-white/40 text-sm mb-8">обсуждается лично</p>
+
+            <ul className="space-y-2 text-sm text-white/70 mb-8 flex-1">
+              {[
+                'Программа под задачи компании',
+                'Удобное время и место',
+                'Размер группы согласуем',
+                'Углублённые модули по запросу',
+                'Стоимость и оплату обсудим в звонке',
+              ].map(i => (
+                <li key={i} className="flex items-start gap-2">
+                  <span className="text-white/40 mt-0.5">✓</span>
+                  <span>{i}</span>
+                </li>
+              ))}
+            </ul>
+
+            <button
+              onClick={onCTA}
+              className="w-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold py-3.5 rounded-xl text-sm transition-colors"
+            >
+              Обсудить индивидуально →
+            </button>
           </div>
         </div>
 
-        <button
-          onClick={onCTA}
-          className="bg-[#D97757] hover:bg-[#c4674a] text-white font-semibold px-10 py-4 rounded-xl text-base transition-colors"
-        >
-          Пройти подготовку и записаться →
-        </button>
+        <p className="text-center text-white/40 text-xs">
+          Не входит: еда и напитки в кафе · подписка Claude Pro · другие платные AI-инструменты · личный ноутбук
+        </p>
       </div>
     </section>
   )
