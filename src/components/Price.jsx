@@ -4,9 +4,13 @@ export default function Price({ onCTA }) {
       <div className="max-w-3xl mx-auto px-6 text-center">
         <p className="text-[#D97757] font-semibold text-sm uppercase tracking-widest mb-3">Стоимость</p>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Стоимость участия</h2>
-        <div className="text-6xl md:text-7xl font-bold text-[#D97757] my-8">50 000 ₸</div>
-        <p className="text-white/60 text-lg mb-10">
-          За 3 часа ты создашь свой первый AI-проект и поймёшь, как использовать вайб-кодинг для работы, бизнеса или личных задач.
+        <div className="text-5xl md:text-6xl font-bold text-[#D97757] my-8">Индивидуально</div>
+        <p className="text-white/60 text-lg mb-3">
+          Стоимость по GrowVibe считаем под каждого участника или группу — зависит
+          от формата (личный практикум или в группе) и задач, которые хотите решить.
+        </p>
+        <p className="text-white/40 text-sm mb-10">
+          Оставь заявку — свяжемся, обсудим и пришлём предложение.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 text-left mb-10">

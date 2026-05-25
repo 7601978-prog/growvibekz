@@ -6,7 +6,7 @@ export default function FinalCTA({ onCTA }) {
           Готов создать свой первый AI-проект?
         </h2>
         <p className="text-white/80 text-lg mb-10">
-          Три часа практики. Реальный результат. Астана и Алматы.
+          Три часа практики. Реальный результат. Астана.
         </p>
         <button
           onClick={onCTA}

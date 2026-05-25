@@ -9,7 +9,7 @@ export default function Hero({ onCTA, onSchedule }) {
       <div className="relative max-w-4xl mx-auto px-6 py-24 md:py-36 text-center">
         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm mb-8">
           <span className="w-2 h-2 rounded-full bg-[#D97757] animate-pulse" />
-          Офлайн-практикум · Астана и Алматы
+          Офлайн-практикум · Астана
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">
@@ -24,7 +24,7 @@ export default function Hero({ onCTA, onSchedule }) {
 
         {/* pills */}
         <div className="flex flex-wrap justify-center gap-3 mb-12 text-sm">
-          {['3 часа практики', 'Офлайн-формат', 'Для новичков', 'Первый сайт или AI-прототип', '50 000 ₸'].map(t => (
+          {['3 часа практики', 'Офлайн-формат', 'Для новичков', 'Первый сайт или AI-прототип', 'Стоимость индивидуально'].map(t => (
             <span key={t} className="bg-white/10 border border-white/20 rounded-full px-4 py-1.5">
               {t}
             </span>
